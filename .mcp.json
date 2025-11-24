@@ -15,13 +15,27 @@
         "SLACK_TEAM_ID": "T09F3PG1H1T"
       }
     },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "env": {}
+    },
+    "linear": {
+      "type": "sse",
+      "url": "https://mcp.linear.app/sse"
+    },
     "youtube-transcript": {
-      "command": "uvx",
+      "type": "stdio",
+      "command": "/home/heone/.local/bin/uvx",
       "args": [
         "--from",
         "git+https://github.com/jkawamoto/mcp-youtube-transcript",
         "mcp-youtube-transcript"
-      ]
+      ],
+      "env": {}
     }
   }
 }
